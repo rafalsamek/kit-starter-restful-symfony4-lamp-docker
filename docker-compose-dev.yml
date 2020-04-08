@@ -8,13 +8,13 @@ volumes:
 
 services:
   php-apache:
-    container_name: kit-starter-symfony4-lamp-docker_php-apache
+    container_name: kit-starter-restful-symfony4-lamp-docker_php-apache
     restart: always
     ports:
       - 80:80
     environment:
       - APACHE_DOCUMENT_ROOT=/var/www/html/public
-      - maildev_host=kit-starter-symfony4-lamp-docker_maildev
+      - maildev_host=kit-starter-restful-symfony4-lamp-docker_maildev
     build:
       context: .
       dockerfile: ./.docker/php-apache/Dockerfile
@@ -33,7 +33,7 @@ services:
   mysql:
     image: mysql
     command: "--default-authentication-plugin=mysql_native_password"
-    container_name: kit-starter-symfony4-lamp-docker_mysql
+    container_name: kit-starter-restful-symfony4-lamp-docker_mysql
     volumes:
       - ./.docker/mysql/conf:/etc/mysql/conf.d
       - mysql_data:/var/lib/mysql
@@ -49,7 +49,7 @@ services:
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
-    container_name: kit-starter-symfony4-lamp-docker_phpmyadmin
+    container_name: kit-starter-restful-symfony4-lamp-docker_phpmyadmin
     environment:
       PMA_HOST: mysql
       PMA_PORT: 3306
@@ -60,6 +60,6 @@ services:
 
   maildev:
     image: djfarrelly/maildev
-    container_name: kit-starter-symfony4-lamp-docker_maildev
+    container_name: kit-starter-restful-symfony4-lamp-docker_maildev
     ports:
       - 8001:80
