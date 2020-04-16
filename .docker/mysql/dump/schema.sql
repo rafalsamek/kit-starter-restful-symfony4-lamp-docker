@@ -7,7 +7,7 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
 
-
+/*
 CREATE TABLE `person` (
   `id` int(11) NOT NULL,
   `name` varchar(20) NOT NULL
@@ -18,6 +18,7 @@ INSERT INTO `person` (`id`, `name`) VALUES
 (1, 'William'),
 (2, 'Marc'),
 (3, 'John');
+*/
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
