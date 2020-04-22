@@ -9,12 +9,12 @@ use PHPUnit\Framework\TestCase;
  *  App\Controller\Rest\ArticleController - Article RESTful API in TDD
  *  (App\Tests\Controller\Rest\ArticleControllerTest corresponding unit tests):
  *      1.0:
- *          POST    /api/articles               - create article, no error handling
+ *          POST    /api/articles               - create one article, no error handling
  *          GET     /api/articles/{articleId}   - read one article by articleId, no error handling
  *          GET     /api/articles               - read list of articles, no filters,
  *                                                no sort by, no pagination, no error handling
-*           PUT     /api/articles/{articleId}   - update article by articleId, no error handling
- *          DELETE  /api/articles/{articleId}   - DELETE one by articleId, no error handling
+*           PUT     /api/articles/{articleId}   - update one article by articleId, no error handling
+ *          DELETE  /api/articles/{articleId}   - delete one article by articleId, no error handling
  *      1.1:
  *          add error handling to all RESTful verbs - above actions
  *      2.0:
