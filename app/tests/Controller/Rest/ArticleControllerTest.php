@@ -13,7 +13,7 @@ use PHPUnit\Framework\TestCase;
  *          GET     /api/articles/{articleId}   - read one article by articleId, no error handling
  *          GET     /api/articles               - read list of articles, no filters,
  *                                                no sort by, no pagination, no error handling
-*           PUT     /api/articles/{articleId}   - update one article by articleId, no error handling
+ *          PUT     /api/articles/{articleId}   - update one article by articleId, no error handling
  *          DELETE  /api/articles/{articleId}   - delete one article by articleId, no error handling
  *      1.1:
  *          add error handling to all RESTful verbs - above actions
